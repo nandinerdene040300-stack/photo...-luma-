@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+  </head>
+  <body class="w-[1440px] h-[2666px] m-auto">
+    <header class="h-[72px] flex items-center">
+      <div class="flex gap-2">
+        <p class="w-9 h-9 text-4xl">✳</p>
+        <p class="text-3xl font-extrabold font-['Manrope',sans-serif]">luma<span class="text-3xl font-extrabold text-[#6B813B]">.</span></p>
+      </div>
+    </header>
+    <div class="h-[103px] border-y border-[#DFE2D7] flex justify-between items-center px-12">
+      <p class="font-['Manrope',sans-serif] font-semibold text-[44px]">Find your next<span class="text-[#6B813B]"> inspiration.</span></p>
+      <form class="w-[745.2px] h-[62px] rounded-2xl border border-[#D8DECC] flex items-center justify-between text-[#92988A] font-regular text-base pl-5 pr-2">
+        <div class="flex justify-center items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#92988A"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-search preview-icon"
+          >
+            <path d="m21 21-4.34-4.34" />
+            <circle cx="11" cy="11" r="8" />
+          </svg>
+          <input class="ml-3" type="text" placeholder="Search photos…" />
+        </div>
+        <button type="button" class="active:scale-90 translate duration-300 ease-in w-[112px] h-[44px] rounded-xl bg-[#D9F583] flex justify-center items-center text-[#293719] text-sm font-semibold">
+          Search ↗
+        </button>
+      </form>
+    </div>
+
+    <div class="columns-3 space-6 px-12 py-6">
+      <img src="./fa1ec18435f25e3c5467c2d9cbbd93b4cb02930a (1).jpg" alt="" class="h-auto w-full mb-6 rounded-2xl" />
+    </div>
+    <div class="flex justify-center items-end">
+      <button class="active:scale-90 translate duration-300 ease-in w-[152px] h-[42px] bg-[#D9F583] rounded-[999px] font-semibold flex justify-center items-center text-[#293719] text-sm">
+        Load more ↓
+      </button>
+    </div>
+  </body>
+</html>
