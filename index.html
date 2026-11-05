@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="index.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
@@ -18,7 +19,7 @@
     </header>
     <div class="h-[103px] border-y border-[#DFE2D7] flex justify-between items-center px-12">
       <p class="font-['Manrope',sans-serif] font-semibold text-[44px]">Find your next<span class="text-[#6B813B]"> inspiration.</span></p>
-      <form class="w-[745.2px] h-[62px] rounded-2xl border border-[#D8DECC] flex items-center justify-between text-[#92988A] font-regular text-base pl-5 pr-2">
+      <form class="w-[745.2px] h-[62px] rounded-2xl border border-[#D8DECC] flex items-center justify-between font-regular text-base pl-5 pr-2">
         <div class="flex justify-center items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -43,11 +44,13 @@
       </form>
     </div>
 
-    <div class="columns-3 space-6 px-12 py-6">
-      <img src="./fa1ec18435f25e3c5467c2d9cbbd93b4cb02930a (1).jpg" alt="" class="h-auto w-full mb-6 rounded-2xl" />
-    </div>
+    <div id="images" class="columns-3 px-12 py-6"></div>
     <div class="flex justify-center items-end">
-      <button class="active:scale-90 translate duration-300 ease-in w-[152px] h-[42px] bg-[#D9F583] rounded-[999px] font-semibold flex justify-center items-center text-[#293719] text-sm">
+      <button
+        id="load-more"
+        type="button"
+        class="active:scale-90 translate duration-300 ease-in w-[152px] h-[42px] bg-[#D9F583] rounded-[999px] font-semibold flex justify-center items-center text-[#293719] text-sm"
+      >
         Load more ↓
       </button>
     </div>
